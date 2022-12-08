@@ -1,0 +1,1412 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="lefttooth">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="遥感复习第一章序章遥感概念广义：遥远的感知 狭义：遥感指不直接接触物体本身，从工作平台上通过传感器探测和接收来自目标物体的信息（电磁波、重力场、地震波、声波等），经过信息传输、加工处理及分析解译，识别物体和现象的属性及其空间分布等特征与变化的技术。 Landsat8主要两个载荷 OLI陆地成像仪 分辨率全色15m，多光谱30m TIRS热红外传感器 分辨率100m 高分1波段设置 高分二波段设置多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="遥感基础知识">
+<meta property="og:url" content="http://example.com/2022/12/08/%E9%81%A5%E6%84%9F%E5%A4%8D%E4%B9%A0/index.html">
+<meta property="og:site_name" content="LEFTTOOTH">
+<meta property="og:description" content="遥感复习第一章序章遥感概念广义：遥远的感知 狭义：遥感指不直接接触物体本身，从工作平台上通过传感器探测和接收来自目标物体的信息（电磁波、重力场、地震波、声波等），经过信息传输、加工处理及分析解译，识别物体和现象的属性及其空间分布等特征与变化的技术。 Landsat8主要两个载荷 OLI陆地成像仪 分辨率全色15m，多光谱30m TIRS热红外传感器 分辨率100m 高分1波段设置 高分二波段设置多">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206152537911.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221201224556645.png">
+<meta property="og:image" content="c:/Users/wjx/Desktop/卫星参数/QQ截图20221110120010.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221202172711276.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221202174122643.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221202220421815.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221202221058732.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221202224414237.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203110843006.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203111632572.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203115307694.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203125957273.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203132145142.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203133730987.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203164530566.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203194328102.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203195519454.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221203195533915.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221204200735876.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221204200748998.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221204201323784.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205165827154.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205193534990.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205204847953.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205210206584.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205210329350.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205214213315.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205232257743.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205234018697.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206153521184.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221205234045212.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206163514207.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206182506311.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206182652944.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206190506661.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206191644838.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206222356026.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206222723677.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206222643012.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206223147211.png">
+<meta property="og:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206222653593.png">
+<meta property="article:published_time" content="2022-12-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-12-08T15:30:13.942Z">
+<meta property="article:author" content="lefttooth">
+<meta property="article:tag" content="遥感">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="c:/Users/wjx/AppData/Roaming/Typora/typora-user-images/image-20221206152537911.png">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>遥感基础知识 - LEFTTOOTH</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.3","typing":{"enable":true,"typeSpeed":120,"cursorChar":"_","loop":true,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>牧马人</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="遥感基础知识"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        lefttooth
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-12-08 00:00" pubdate>
+          2022年12月8日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          16k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          135 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">遥感基础知识</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="遥感复习"><a href="#遥感复习" class="headerlink" title="遥感复习"></a>遥感复习</h1><h2 id="第一章序章"><a href="#第一章序章" class="headerlink" title="第一章序章"></a>第一章序章</h2><h3 id="遥感概念"><a href="#遥感概念" class="headerlink" title="遥感概念"></a>遥感概念</h3><p>广义：遥远的感知</p>
+<p>狭义：遥感指不直接接触物体本身，从工作平台上通过传感器探测和接收来自目标物体的信息（电磁波、重力场、地震波、声波等），经过信息传输、加工处理及分析解译，识别物体和现象的属性及其空间分布等特征与变化的技术。</p>
+<h3 id="Landsat8"><a href="#Landsat8" class="headerlink" title="Landsat8"></a>Landsat8</h3><p>主要两个载荷</p>
+<p>OLI陆地成像仪 分辨率全色15m，多光谱30m</p>
+<p>TIRS热红外传感器 分辨率100m</p>
+<h3 id="高分1波段设置"><a href="#高分1波段设置" class="headerlink" title="高分1波段设置"></a>高分1波段设置</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206152537911.png" srcset="/img/loading.gif" lazyload alt="image-20221206152537911"></p>
+<h3 id="高分二波段设置"><a href="#高分二波段设置" class="headerlink" title="高分二波段设置"></a>高分二波段设置</h3><p>多光谱分4个波段，空间分辨率3.2m</p>
+<p>全色分辨率0.8m</p>
+<h3 id="遥感是科学也是艺术"><a href="#遥感是科学也是艺术" class="headerlink" title="遥感是科学也是艺术"></a>遥感是科学也是艺术</h3><p>​    遥感是一门与数学相似的技术/工具。它利用传感器远距离测得从对象或地理区域发出的电磁能量，然后利用数学或统计算法从这些数据中提取有价值的信息-这是一项科学活动</p>
+<p>​    遥感影像的目视解译过程中不仅需要科学知识，还需要解译者的经验知识-是一门艺术</p>
+<h3 id="遥感过程"><a href="#遥感过程" class="headerlink" title="遥感过程"></a>遥感过程</h3><p>信息源-信息获取-信息记录和传输-信息处理-信息应用</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221201224556645.png" srcset="/img/loading.gif" lazyload alt="image-20221201224556645"></p>
+<p>信息源</p>
+<p>被动遥感利用的能源主要是太阳辐射能，其次还有地物本身发射的能量</p>
+<p>主动遥感由传感器向目标物发射一定频率的电磁辐射波，然后接收从目标物返回的辐射信息</p>
+<p>信息获取</p>
+<p>传感平台（三角架）、传感器（照相机）</p>
+<p>主要有摄影机、扫描仪和雷达</p>
+<p>典型卫星遥感平台：气象卫星、地球资源卫星、海洋卫星</p>
+<p>信息传输与记录</p>
+<blockquote>
+<p>为什么中国卫星地面站要建筑在北极？</p>
+</blockquote>
+<ol>
+<li>极轨卫星的必经之地，接收效率高，观测范围更大</li>
+<li>人迹罕至，电磁干扰少</li>
+</ol>
+<blockquote>
+<p>为什么三亚的接收站要罩起来？</p>
+</blockquote>
+<p>三亚靠近海洋，空气盐度大，湿润，容易腐蚀</p>
+<p>北京、密云、喀什、三亚、昆明、北极</p>
+<p>遥感信息处理</p>
+<p>目的：</p>
+<ol>
+<li>消除各种辐射畸变和几何畸变，使经过处理后的图像能更真实地代表原景物</li>
+<li>利用增强技术突出景物地某些特征，使之易于区别和判断</li>
+<li>进一步分析、理解和识别处理后的图像，提取可用性更高的信息，进一步获取内在规律</li>
+</ol>
+<p>信息应用</p>
+<p>矿产探测、环境、农业、林业（山火）、军事、物体识别、城市管理、保险、灾害</p>
+<h3 id="遥感分类"><a href="#遥感分类" class="headerlink" title="遥感分类"></a>遥感分类</h3><ol>
+<li>按信息源：主动遥感、被动遥感</li>
+<li>按平台分类：地面遥感、航空遥感（无人机遥感）、航天遥感</li>
+<li>按数据记录方式分：成像遥感、非成像遥感</li>
+<li>按工作波段分：紫外遥感、可见光遥感、红外遥感、微波遥感</li>
+<li>按波段数量分：全色遥感、多光谱遥感、高光谱遥感</li>
+<li>按应用类型分：资源遥感、环境遥感、农业遥感、林业遥感、地质遥感、城市遥感</li>
+</ol>
+<blockquote>
+<p>按工作波段分也可分为</p>
+<p>光学遥感（0.3-3um）</p>
+<ol>
+<li>紫外线遥感（0.3-0.38um）</li>
+<li>可见光遥感（0.38-0.76um）</li>
+<li>近红外遥感（0.76um-3um）反射红外</li>
+</ol>
+<p>热红外遥感（3-1000um）发射红外</p>
+<p>微波遥感（1mm-1m）</p>
+</blockquote>
+<p><img src="C:\Users\wjx\Desktop\卫星参数\QQ截图20221110120010.png" srcset="/img/loading.gif" lazyload alt="QQ截图20221110120010"></p>
+<h3 id="遥感特点（优点）"><a href="#遥感特点（优点）" class="headerlink" title="遥感特点（优点）"></a>遥感特点（优点）</h3><ol>
+<li>宏观观测：大范围同步获取数据（相较以前费时费力的地面观测）</li>
+<li>动态监测、快速更新监测范围数据：快速周期性的对同一地点进行连续观测，利用同一地区的不同时相的遥感数据进行变化信息的提取，从而达到动态监测的目的</li>
+<li>技术手段多样，可获取海量信息：可提供丰富的光谱信息</li>
+<li>应用领域广泛，经济效益高：相较传统方法，大大节省了人力、物力和财力。</li>
+</ol>
+<h3 id="遥感的局限性"><a href="#遥感的局限性" class="headerlink" title="遥感的局限性"></a>遥感的局限性</h3><ol>
+<li>图像的判读，解译获取的是对地物的大致估计，和实际情况有所出入</li>
+<li>计算机判读误差比人工差，但人工的话工作量又很大</li>
+<li>解译成本高，需要专业人员配合等</li>
+</ol>
+<h2 id="遥感物理基础"><a href="#遥感物理基础" class="headerlink" title="遥感物理基础"></a>遥感物理基础</h2><h3 id="电磁波谱"><a href="#电磁波谱" class="headerlink" title="电磁波谱"></a>电磁波谱</h3><p>按波长或频率的顺序排列起来构成的波谱</p>
+<blockquote>
+<p>Gamma射线&lt;0.1nm具有极强的穿透性</p>
+</blockquote>
+<blockquote>
+<p>X射线0.1-10nm</p>
+</blockquote>
+<blockquote>
+<p>紫外线0.01-0.38um, 但0.0.1-0.3大多被大气所吸收，主要用于碳酸盐分布、油污监测</p>
+</blockquote>
+<blockquote>
+<p>可见光0.38-0.76um，使用棱镜分光时可实现多光谱少镜头的功能</p>
+</blockquote>
+<blockquote>
+<p>红外线0.76-1000um</p>
+<p>反射红外|3um|发射红外</p>
+<p>0.76-3-6-15-1000依次为近红外、中红外、远红外和超远红外</p>
+<p><strong>遥感常用的红外是8-14um和3-5um</strong></p>
+</blockquote>
+<blockquote>
+<p>微波1-1000mm又分为毫米波、厘米波和分米波</p>
+<p><strong>全天候</strong>：波长较长，散射较少，在大气中衰减较少，微波对云层、雨区的穿透能力强、基本不受烟、云、雨的限制，穿透特性可以用来探测林下地形、军事目标以及埋藏地下的工程、矿藏、地下水等</p>
+</blockquote>
+<h3 id="各卫星参数"><a href="#各卫星参数" class="headerlink" title="各卫星参数"></a>各卫星参数</h3><p>（补）</p>
+<h3 id="电磁辐射"><a href="#电磁辐射" class="headerlink" title="电磁辐射"></a>电磁辐射</h3><h4 id="辐射能量"><a href="#辐射能量" class="headerlink" title="辐射能量"></a>辐射能量</h4><p>电磁辐射携带的能量Q=h*v（单位J）</p>
+<h4 id="辐射通量"><a href="#辐射通量" class="headerlink" title="辐射通量"></a>辐射通量</h4><p>单位时间内通过某一面积的辐射能量fai=dQ/dt（单位W或J/s）</p>
+<h4 id="辐射通量密度"><a href="#辐射通量密度" class="headerlink" title="辐射通量密度"></a>辐射通量密度</h4><p>单位时间内通过单位面积的辐射能量E=dfai/dS（单位W/m2）</p>
+<p>分为辐照度I：被照物体表面</p>
+<p>辐射出射度M：辐射源</p>
+<h4 id="辐射亮度"><a href="#辐射亮度" class="headerlink" title="辐射亮度"></a>辐射亮度</h4><p>是辐射源在某一方向，单位投影面积，单位立体角内的辐射通量（单位W/m2/sr）</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221202172711276.png" srcset="/img/loading.gif" lazyload alt="image-20221202172711276"></p>
+<h3 id="朗伯源"><a href="#朗伯源" class="headerlink" title="朗伯源"></a>朗伯源</h3><p>如果辐射亮度的大小与方向无关，即表面发射反射辐射各向同性，这类辐射源成为朗伯源</p>
+<p>严格来说，只有绝对黑体才是朗伯源。</p>
+<h3 id="辐射度量关系图"><a href="#辐射度量关系图" class="headerlink" title="辐射度量关系图"></a>辐射度量关系图</h3><p>辐射能量（焦耳）关于时间的导数为辐射通量（瓦特）</p>
+<p>辐射通量（瓦特）关于面积的导数为辐射通量密度（瓦特/平方米），辐射通量（瓦特）关于立体角的导数+关于面积的导数为辐射亮度（瓦特/球面度/平方米）</p>
+<p>辐射通量密度（瓦特/平方米）关于立体角的导数为辐射亮度</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221202174122643.png" srcset="/img/loading.gif" lazyload alt="image-20221202174122643"></p>
+<p>在辐射测量的各个量中，如果加上“光谱/波谱”术语时，则是指单位波长宽度的量</p>
+<h3 id="热辐射"><a href="#热辐射" class="headerlink" title="热辐射"></a>热辐射</h3><p>物体内部分子、原子由于热运动而向外辐射电磁波，因辐射与温度有关，故称热辐射</p>
+<h3 id="热辐射特点"><a href="#热辐射特点" class="headerlink" title="热辐射特点"></a>热辐射特点</h3><ol>
+<li>任何物体任何温度均存在热辐射</li>
+<li>热辐射是连续谱，各种波长（频率）都有，但是强度不同</li>
+<li>热辐射强度按波长的分布与温度有关，温度上升，短波长的电磁波比例上升</li>
+</ol>
+<h3 id="黑体"><a href="#黑体" class="headerlink" title="黑体"></a>黑体</h3><p>指可以吸收任何入射的电磁辐射，既没有反射，也没有透射的理想物理体，也叫完全辐射体</p>
+<p>自然界不存在绝对的黑体</p>
+<p>黑色的烟煤是最接近黑体的自然物体，吸收系数达接近100%；恒星和太阳是接近黑体辐射的辐射源。</p>
+<h3 id="黑体辐射定律"><a href="#黑体辐射定律" class="headerlink" title="黑体辐射定律"></a>黑体辐射定律</h3><h4 id="普朗克定律"><a href="#普朗克定律" class="headerlink" title="普朗克定律"></a>普朗克定律</h4><p>描述黑体辐射出射度与温度、波长分布的关系</p>
+<p>温度愈高，出射度也愈大，不同温度的曲线是不相交的。</p>
+<p>辐射出射度随波长连续变化，每条曲线只有一个最大值。</p>
+<h4 id="斯蒂芬-玻尔兹曼定律"><a href="#斯蒂芬-玻尔兹曼定律" class="headerlink" title="斯蒂芬-玻尔兹曼定律"></a>斯蒂芬-玻尔兹曼定律</h4><p>全波段范围内，某黑体的总辐射出射度与黑体的温度的四次方成正比</p>
+<p>每条黑体辐射曲线下面围起来的面积为积分值，就是该温度时的总辐射出射度</p>
+<p>黑体总辐射出射度随温度增加迅速增加。温度的微小变化，就会引起辐射出射度很大的变化（红外测温的理论基础）</p>
+<h4 id="维恩位移定律"><a href="#维恩位移定律" class="headerlink" title="维恩位移定律"></a>维恩位移定律</h4><p>随着黑体温度的上升，辐射的最大值对应的波长向短波方向移动</p>
+<p>如山火1000K，波长会从8-14um移动到3-5um，从而检测到火灾发生</p>
+<h3 id="一般物体的发射辐射"><a href="#一般物体的发射辐射" class="headerlink" title="一般物体的发射辐射"></a>一般物体的发射辐射</h3><p>主要是反射、透射和吸收</p>
+<p>加上波谱两字，指某个波段</p>
+<h4 id="地物波谱发射率"><a href="#地物波谱发射率" class="headerlink" title="地物波谱发射率"></a>地物波谱发射率</h4><p>地物某波长的辐射出射度/黑体同温度同波长的辐射出射度</p>
+<p>相同条件下，实际地物发射的辐射量比绝对黑体低，所以地物波谱发射率的范围为0-1</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221202220421815.png" srcset="/img/loading.gif" lazyload alt="image-20221202220421815"></p>
+<h4 id="地物发射率"><a href="#地物发射率" class="headerlink" title="地物发射率"></a>地物发射率</h4><p>地物的辐射出射度/黑体同温度辐射出射度</p>
+<p>等于相应曲线下的面积之比</p>
+<p>反映地物与黑体的接近程度</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221202221058732.png" srcset="/img/loading.gif" lazyload alt="image-20221202221058732"></p>
+<h3 id="发射波谱曲线"><a href="#发射波谱曲线" class="headerlink" title="发射波谱曲线"></a>发射波谱曲线</h3><p>温度一定时，物体的发射率随波长变化，表示这种变化的曲线称为物体的发射波谱曲线</p>
+<p>发射波谱曲线，是识别地物的重要方法之一</p>
+<h3 id="发射率等于吸收率"><a href="#发射率等于吸收率" class="headerlink" title="发射率等于吸收率"></a>发射率等于吸收率</h3><p>基尔霍夫定律证明好的吸收体也是好的发射体</p>
+<h3 id="太阳常数"><a href="#太阳常数" class="headerlink" title="太阳常数"></a>太阳常数</h3><p>指<strong>不受大气影响</strong>，在距太阳一个天文单位内，垂直于太阳光辐射方向上，单位面积单位时间黑体所接收到的太阳辐射能量</p>
+<p>I0=1.36*10W/m2</p>
+<p>太阳常数实际上是辐射通量密度的概念，这里是辐照度</p>
+<p>可以认为太阳常数是在大气顶端接收的太阳能量</p>
+<p>太阳常数不是稳定值，但变化很小</p>
+<h3 id="太阳波谱辐照度曲线"><a href="#太阳波谱辐照度曲线" class="headerlink" title="太阳波谱辐照度曲线"></a>太阳波谱辐照度曲线</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221202224414237.png" srcset="/img/loading.gif" lazyload alt="image-20221202224414237"></p>
+<p>太阳辐射的光谱是连续的，辐射特性与黑体辐射特性基本一致</p>
+<p>紫外到中红外波段区间能量集中、稳定</p>
+<p>太阳辐射峰值在0.5um左右，约99%集中在0.2-4um上，约44%集中在可见光</p>
+<p>大气上界和海平面的曲线有差别，差别在于大气层的吸收散射等的影响</p>
+<h3 id="电磁波传输过程"><a href="#电磁波传输过程" class="headerlink" title="电磁波传输过程"></a>电磁波传输过程</h3><p>到达地面的太阳辐射能量=反射能量+吸收能量+透射能量</p>
+<h3 id="地物的波谱特性"><a href="#地物的波谱特性" class="headerlink" title="地物的波谱特性"></a>地物的波谱特性</h3><p>任何地物都有自身的电磁辐射规律，如反射、发射、吸收电磁波的特性。少数还有透射电磁波的特性。地物的这种特性成为地物的波谱特性</p>
+<h3 id="地物的反射类型"><a href="#地物的反射类型" class="headerlink" title="地物的反射类型"></a>地物的反射类型</h3><p>大致可分为镜面反射、漫反射、方向反射（实际物体反射）</p>
+<p>漫反射：发生在非常粗糙的表面上的，不论入射什么方向，其反射出来的能量在各个方向是一致。这种反射面又叫朗伯面。</p>
+<p>方向反射：介于镜面反射和漫反射之间的一种反射，自然界中绝大多数地物的反射都属于这种类型，即对太阳短波辐射的反射具有各向异性。</p>
+<blockquote>
+<p>为什么观测时间尽量避免中午观测？</p>
+</blockquote>
+<p>遥感图像上记录的辐射亮度，既与辐射入射方位角和天顶角有关，也和反射方向的方位角和天顶角有关</p>
+<p>由于中午太阳高度角接近90度，镜面反射会造成太阳光直接进入遥感器，水体会形成非常亮的耀斑，干扰和削弱周围地物的反射信息。</p>
+<h3 id="地物的反射波谱"><a href="#地物的反射波谱" class="headerlink" title="地物的反射波谱"></a>地物的反射波谱</h3><h4 id="地物的波谱反射率"><a href="#地物的波谱反射率" class="headerlink" title="地物的波谱反射率"></a>地物的波谱反射率</h4><p>地物在<strong>某波段</strong>的反射能量与入射总能量的比</p>
+<h4 id="反射率"><a href="#反射率" class="headerlink" title="反射率"></a>反射率</h4><p>地物反射能量与入射总能量的比</p>
+<p>实际上物体对不同波长的电磁波是选择性反射的</p>
+<h4 id="地物反射波谱"><a href="#地物反射波谱" class="headerlink" title="地物反射波谱"></a>地物反射波谱</h4><p> <img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203110843006.png" srcset="/img/loading.gif" lazyload alt="image-20221203110843006"></p>
+<ol>
+<li>某一地物在不同波段的反射率不同</li>
+<li>不同地物在不同波段反射率存在差异</li>
+<li>同种地物的反射波谱具有相似性，但也有差异性</li>
+</ol>
+<h3 id="同物异谱和异物同谱"><a href="#同物异谱和异物同谱" class="headerlink" title="同物异谱和异物同谱"></a>同物异谱和异物同谱</h3><p>同物异谱指同类地物，在某个波段上波谱特征不同（周围环境、病虫害或放射性物质等）</p>
+<p>异物同谱指不同类型的地物具有相同的波谱特征</p>
+<h3 id="典型地物的波谱特性"><a href="#典型地物的波谱特性" class="headerlink" title="典型地物的波谱特性"></a>典型地物的波谱特性</h3><blockquote>
+<p>在遥感图像中，越白代表反射率越高，越黑代表反射率越低</p>
+</blockquote>
+<h4 id="绿色植被"><a href="#绿色植被" class="headerlink" title="绿色植被"></a>绿色植被</h4><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203111632572.png" srcset="/img/loading.gif" lazyload alt="image-20221203111632572"></p>
+<p>可见光波段</p>
+<p>在0.45um附近（蓝色波段）有一个吸收谷</p>
+<p>在0.55um附近（绿色波段）有一个反射锋</p>
+<p>在0.67um附近（红色波段）有一个吸收谷</p>
+<p>近红外波段</p>
+<p>从0.76um处反射率迅速增大，至1.1um峰值，形成一个峰值，一般不超过50%</p>
+<p>1.45um、1.95um、2.70um为中心是水的吸收带，附近受绿色植物的含水量影响，反射率下降形成低谷</p>
+<blockquote>
+<p>影响绿色植被的反射波谱的主要因素</p>
+<p>植物类型</p>
+<p>植被生长季节</p>
+<p>植被生长状态</p>
+</blockquote>
+<h4 id="纯净水体"><a href="#纯净水体" class="headerlink" title="纯净水体"></a>纯净水体</h4><blockquote>
+<p>一定要注意纯净水体的前提</p>
+</blockquote>
+<p>纯净水体的反射主要在可见光的蓝绿光波段，近红外和中红外的反射率很低几乎为0</p>
+<img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203115307694.png" srcset="/img/loading.gif" lazyload alt="image-20221203115307694" style="zoom: 50%;" />
+
+<blockquote>
+<p>影响水体反射的主要因素</p>
+<p>泥沙含量：由于泥沙散射，反射率整体升高，峰值出现在黄红区</p>
+<p>叶绿素含量：近红外波段明显上升，蓝绿有下降趋势</p>
+</blockquote>
+<p>如何监测植物是否生病？</p>
+<p>找差异较大的波段，主要是近红外</p>
+<p>正常植物叶绿素较多，因而蓝、红波段吸收率高，绿和近红外反射率高。</p>
+<p>而遭受病虫害的植物，失去大量叶子或者叶子枯黄，这使得在蓝、红的吸收率下降，在绿和近红外的反射率下降，尤其是近红外变化最明显，峰值被削低，其次是两个吸收谷不明显了。</p>
+<h4 id="土壤反射波谱特性"><a href="#土壤反射波谱特性" class="headerlink" title="土壤反射波谱特性"></a>土壤反射波谱特性</h4><p>自然状态下的土壤表面的反射曲线比较平滑，没有明显的反射锋和吸收谷</p>
+<p>在干燥条件下，土壤的波谱特性主要与成土矿物和土壤有机质有关</p>
+<img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203125957273.png" srcset="/img/loading.gif" lazyload alt="image-20221203125957273" style="zoom:50%;" />
+
+<blockquote>
+<p>影响土壤波谱特性的主要因素</p>
+<p>土质：土质越细，反射率越高</p>
+<p>有机物含量：有机质和水的含量越高，反射率越低</p>
+<p>含水量：土壤含水量增加，土壤反射率会下降，在1.45，1.95和2.7um形成吸收谷</p>
+</blockquote>
+<h3 id="测量地物的反射波谱特性曲线主要有以下三种作用"><a href="#测量地物的反射波谱特性曲线主要有以下三种作用" class="headerlink" title="测量地物的反射波谱特性曲线主要有以下三种作用"></a>测量地物的反射波谱特性曲线主要有以下三种作用</h3><ol>
+<li>它是选择遥感波谱段，设计遥感仪器的依据</li>
+<li>在外业测量中，它是选择合适飞行时间的基础资料</li>
+<li>它是有效地进行遥感图像数字处理的前提之一，是用户判读、识别、分析遥感影像的基础</li>
+</ol>
+<h3 id="大气结构"><a href="#大气结构" class="headerlink" title="大气结构"></a>大气结构</h3><p>对流层、平流层、中间层、热层、外层</p>
+<h3 id="大气对电磁辐射的影响"><a href="#大气对电磁辐射的影响" class="headerlink" title="大气对电磁辐射的影响"></a>大气对电磁辐射的影响</h3><p><u>吸收</u>、<u>散射</u>、<u>反射</u>、扰动、折射、偏振</p>
+<h4 id="吸收"><a href="#吸收" class="headerlink" title="吸收"></a>吸收</h4><p>大气中的各种成分对太阳辐射有选择性的吸收</p>
+<p>主要发生在紫外红外微波区，转变为自身的内能</p>
+<blockquote>
+<p>使遥感图像黯淡</p>
+</blockquote>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203132145142.png" srcset="/img/loading.gif" lazyload alt="image-20221203132145142"></p>
+<h4 id="大气散射"><a href="#大气散射" class="headerlink" title="大气散射"></a>大气散射</h4><p>辐射在传播过程中遇到微小微粒而使传播方向改变，并向各个方向散开</p>
+<p>不同于吸收作用，只改变传播方向，不能转变为内能。</p>
+<p>散射主要发生在可见光区域</p>
+<blockquote>
+<p>对于遥感图像来说，降低了接收数据的质量，造成图像的模糊不清</p>
+</blockquote>
+<p>散射的方式随电磁波长与大气分子直径/气溶胶微粒大小相对关系变化</p>
+<p>主要是1瑞利散射：d《波长；2米氏散射d约等于波长；3非选择性散射d》波长</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203133730987.png" srcset="/img/loading.gif" lazyload alt="image-20221203133730987"></p>
+<h5 id="瑞利散射"><a href="#瑞利散射" class="headerlink" title="瑞利散射"></a>瑞利散射</h5><ol>
+<li><strong>完全干净的大气发生散射时，其散射的量随着波长的变短而增加，一般与波长的四次方成反比</strong>。p当大气中微粒直径相对于波长来说很小时，发生瑞利散射，如尘埃、氮或氧气分子等，它们的直径相对于可见光和近红外波长来说小很多。当波长大于1um，瑞利散射忽略不计，因此红外线微波可以不考虑瑞利散射的影响。瑞利散射也叫<u>分子散射</u>，是纯净大气所发生的散射。</li>
+<li>该散射主要发生在距离地面9-10km的大气</li>
+</ol>
+<blockquote>
+<p>干洁大气天空为什么呈蓝色？</p>
+<p>大气中的气体分子相对于可见光波长很小，故发生瑞利散射；</p>
+<p>同时由于瑞利散射与波长的4次方成反比，于是波长较短的蓝光波段被气体分子散射到天空中，所以呈现蓝色。</p>
+<p>早上起来为什么天空是红色的？</p>
+<p>这时太阳高度角较小，穿过的距离最大，蓝光等波长短的光都被散射掉了，只透过波长较长的红光了。</p>
+</blockquote>
+<h5 id="米氏散射"><a href="#米氏散射" class="headerlink" title="米氏散射"></a>米氏散射</h5><p>较大微粒发生的散射现象，即大气中的气溶胶引起的散射</p>
+<p>米氏散射的影响范围主要是可见光和近红外</p>
+<p>主要发生在近地面0-5km的大气中，因为该高度的大气中富含直径较大的微粒。</p>
+<p>大气中云雾雨滴的微粒大小与红外线的波长差不多，因此，云、雾对红外线的米氏散射是不可忽视的。</p>
+<h5 id="无选择性散射"><a href="#无选择性散射" class="headerlink" title="无选择性散射"></a>无选择性散射</h5><p>当微粒的直径比辐射的波长大很多时发生的散射称为无选择性散射。该散射与波长无关，即任何波长散射强度相同。</p>
+<p>这种散射将使传感器接收的辐射严重地衰减。</p>
+<blockquote>
+<p>云、雾之所以看起来是白色，是因为云雾微粒直径较大，发生无选择性散射，无选择性散射对可见光的各波长的散射均是相同的。</p>
+</blockquote>
+<h5 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h5><ol>
+<li>对于大气分子、原子引起的瑞利散射主要发生在可见光和近红外波段；对于大气微粒引起的米氏散射从紫外到红外波段都有影响；当波长进入红外波段后，米氏散射的影响超过瑞利散射。</li>
+<li>大气云层中，相对于其他微粒而言，小雨滴的直径最大，对可见光只有无选择性散射，云层越厚散射越强。因此，阴天不利于可见光遥感。</li>
+<li>微波波长比小雨滴直径大得多，属于瑞利散射，散射强度与波长四次方成反比，波长越长散射强度越弱。因此微波才可能有最小散射、最大透射，具有穿云透雾，<strong>全天候</strong>的能力。</li>
+</ol>
+<blockquote>
+<p>乌云为啥是黑色的？</p>
+<p>乌云云层较厚，连片，散射少</p>
+<p>从上方看乌云是白色的</p>
+</blockquote>
+<h3 id="大气折射"><a href="#大气折射" class="headerlink" title="大气折射"></a>大气折射</h3><p>电磁波穿过大气层时，除发生吸收和散射外，还会出现传播方向的改变，即发生折射。</p>
+<p>折射率与大气密度有关，密度越大折射率越大。由于折射的影响，电磁波在大气中的传播轨迹是一条曲线，到达地面后方向与实际方向比偏移了一个角度</p>
+<blockquote>
+<p>早晨看到的太阳比中午看到的大，为啥？</p>
+<p>由于折射，早上太阳高度角小，太阳光穿过大气层厚，折射效果明显，所以放大明显；中午则太阳高度角最大，折射不明显。</p>
+<p>加之光渗效应，早上背景黑暗，明亮的太阳会使人产生视觉上的错觉</p>
+<p>中午一般不直接观察太阳，以至于中午太阳在人们记忆中是个明亮的点。</p>
+</blockquote>
+<h3 id="大气反射"><a href="#大气反射" class="headerlink" title="大气反射"></a>大气反射</h3><p>电磁波传播过程中通过两种介质的交界面上时，还会出现反射现象，这种反射同样满足反射定律。<br>通过大气时，气体、尘埃反射作用很小。反射现象主要发生在云层顶部，取决于云量和雾量，而且各个波段均受到不同程度的影响，严重地削弱了电磁波强度。<br>因此，如果不是专门研究云层，尽量选择无云的天气接收遥感信号，则不用考虑大气的反射。</p>
+<h3 id="大气窗口"><a href="#大气窗口" class="headerlink" title="大气窗口"></a>大气窗口</h3><p><strong>指很少或没有被大气衰减的电磁波段</strong></p>
+<p>完整的如下：由于大气层的反射、散射和吸收作用，使得太阳辐射的各波段受到衰减的作用轻重不同，因而各波段的透射率也各不相同。我们就把受到大气衰减作用较轻、透射率较高的波段叫大气窗口。</p>
+<p>主要是紫外、可见光和红外、微波</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203164530566.png" srcset="/img/loading.gif" lazyload alt="image-20221203164530566"></p>
+<h2 id="遥感传感器与信息获取"><a href="#遥感传感器与信息获取" class="headerlink" title="遥感传感器与信息获取"></a>遥感传感器与信息获取</h2><h3 id="传感器的定义与组成"><a href="#传感器的定义与组成" class="headerlink" title="传感器的定义与组成"></a>传感器的定义与组成</h3><p>遥感传感器：遥感传感器是收集、探测、记录从目标反射或发射来的电磁波的仪器，是遥感技术系统的核心。</p>
+<p>组成：遥感传感器一般由采集器（收集器）、探测器、处理器和输出器4部分组成。</p>
+<h3 id="传感器的分类"><a href="#传感器的分类" class="headerlink" title="传感器的分类"></a>传感器的分类</h3><p>按电磁波分：</p>
+<p>主动遥感传感器（雷达）<br>被动遥感传感器（可见光近红外、热红外、被动微波）</p>
+<p>按结构原理分：</p>
+<p>非图像类传感器<br>摄影成像类传感器<br>扫描成像类传感器<br>微波遥感传感器</p>
+<p>按工作波段分：</p>
+<p>可见光、近红外传感器<br>多光谱传感器<br>高光谱传感器<br>热红外传感器<br>微波遥感传感器</p>
+<h3 id="摄影型遥感传感器"><a href="#摄影型遥感传感器" class="headerlink" title="摄影型遥感传感器"></a>摄影型遥感传感器</h3><p>可分为分幅式摄影机和全景式摄像机</p>
+<p>全景式相机可分为缝隙式摄影机（拍摄方向与奉行方向一致）和镜头转动摄影机（物镜垂直航线方向摆动）</p>
+<h3 id="扫描型遥感传感器"><a href="#扫描型遥感传感器" class="headerlink" title="扫描型遥感传感器"></a>扫描型遥感传感器</h3><p>分为物面扫描（探测元件和扫描镜）和像面扫描（探测元件）</p>
+<h4 id="物面扫描"><a href="#物面扫描" class="headerlink" title="物面扫描"></a>物面扫描</h4><p>​    遥感平台行进时，依靠机械传动装置使镜头摆动，对行进的垂直方向的地面进行逐点扫描，进而实现逐行扫描，获得二维遥感图像。</p>
+<p>最主要答出：Landsat1-7</p>
+<blockquote>
+<p>典型物面扫描传感器：Landsat MSS、TM、ETM+、NOAA AVHRR</p>
+</blockquote>
+<p>扫描镜在一瞬间可以视为静止状态，其接受的电磁波辐射限定在一个很小的角度内，该角度为瞬时视场角</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203194328102.png" srcset="/img/loading.gif" lazyload alt="image-20221203194328102"></p>
+<p>物面扫描的特点：</p>
+<p>依靠扫描镜实现逐点逐行扫描</p>
+<p>行扫描，每条扫描线/扫描线组均有一个投影中心，所得影像为多中心投影影像</p>
+<p>在每条扫面线上，距离投影中心越远，每个IFOV对应的地面单元越大，像点变形越大</p>
+<h4 id="像面扫描"><a href="#像面扫描" class="headerlink" title="像面扫描"></a>像面扫描</h4><p>工作方式：将探测器按垂直于行进方向阵列式排列，来感应地面相应，瞬间得到一条图像线；在遥感平台行进时，以推扫方式获得二维遥感图像。</p>
+<p>最主要答出：SPOT</p>
+<blockquote>
+<p>典型相面扫描传感器：SPOT HRV、HJ-1A/1B CCD、Sentinel-3 OLCI、Landsat-8 OLI和TIRS</p>
+</blockquote>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203195519454.png" srcset="/img/loading.gif" lazyload alt="image-20221203195519454"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221203195533915.png" srcset="/img/loading.gif" lazyload alt="image-20221203195533915"></p>
+<h4 id="像面扫描相对于物面扫描的特点"><a href="#像面扫描相对于物面扫描的特点" class="headerlink" title="像面扫描相对于物面扫描的特点"></a>像面扫描相对于物面扫描的特点</h4><p>优点</p>
+<ol>
+<li>对每个地面单元响应时间长</li>
+<li>几何完整性更好</li>
+<li>体积小、重量轻、能耗低</li>
+<li>稳定性好、可靠性高、寿命长</li>
+</ol>
+<p>缺点</p>
+<ol>
+<li>易产生带状噪声，需要进行校准</li>
+<li>CCD的光谱响应范围有限</li>
+<li>总视场一般不如物面扫描</li>
+</ol>
+<h3 id="高光谱成像光谱仪"><a href="#高光谱成像光谱仪" class="headerlink" title="高光谱成像光谱仪"></a>高光谱成像光谱仪</h3><p>​    通过将传统的空间成像技术与地物光谱技术有机地结合在一起，使得扫描仪在取得目标地物图像的同时也能获取地物的光谱组成。这种既能成像又能获取地物目标的连续光谱曲线的谱像合一的技术，称为成像光谱技术。按照该原理制成的扫描仪称为成像光谱仪</p>
+<h4 id="摆扫型成像光谱仪"><a href="#摆扫型成像光谱仪" class="headerlink" title="摆扫型成像光谱仪"></a>摆扫型成像光谱仪</h4><p>线阵列探测器+光机扫描仪</p>
+<h4 id="推扫型成像光谱仪"><a href="#推扫型成像光谱仪" class="headerlink" title="推扫型成像光谱仪"></a>推扫型成像光谱仪</h4><p>面阵列探测器+推扫式扫描仪</p>
+<h4 id="结构明显差别"><a href="#结构明显差别" class="headerlink" title="结构明显差别"></a>结构明显差别</h4><p>差别在于物面扫描有一个旋转扫描镜</p>
+<h3 id="微波遥感的特点"><a href="#微波遥感的特点" class="headerlink" title="微波遥感的特点"></a>微波遥感的特点</h3><ol>
+<li><p>能<strong>全天时、全天候</strong>工作</p>
+</li>
+<li><p>对地物具有一定穿透能力（冰、雪、森岭、土壤等）</p>
+<p>微波波长远远大于粒子直径d，发生的是瑞利散射，但是微波波长太长，散射强度很小，投射能力强</p>
+</li>
+<li><p>主动微波遥感可记录电磁波幅度、极化、相位等信息</p>
+</li>
+<li><p>对某些地物的鉴别能力更强</p>
+</li>
+</ol>
+<p>分为真实孔径雷达和合成孔径雷达（SAR）两种</p>
+<p>合成孔径雷达举例：ENVISAT，GF-3等</p>
+<h3 id="卫星轨道"><a href="#卫星轨道" class="headerlink" title="卫星轨道"></a>卫星轨道</h3><h4 id="太阳同步轨道（SSO）"><a href="#太阳同步轨道（SSO）" class="headerlink" title="太阳同步轨道（SSO）"></a>太阳同步轨道（SSO）</h4><p>卫星的轨道面和太阳地球连线之间的夹角不随地球绕太阳公转而改变，轨道倾角接近90度，卫星在两级附近通过，又称为近极低太阳同步轨道</p>
+<blockquote>
+<p>太阳都是从同一角度照射某地，可使<strong>卫星经过同一地点的地方时基本相同</strong>，卫星资料具有长期可比性，可发现地物发展规律</p>
+</blockquote>
+<p>一种特殊的极轨卫星</p>
+<p>相对于地球向西逆行</p>
+<p>多数卫星高度约600-800km</p>
+<p>轨道周期90-100min</p>
+<p>卫星每天绕地球旋转14-16圈</p>
+<h4 id="地球同步轨道"><a href="#地球同步轨道" class="headerlink" title="地球同步轨道"></a>地球同步轨道</h4><p>卫星的重访周期等于地球的自转周期（23小时56分4秒），且方向亦与之一致</p>
+<p>卫星高度35786KM</p>
+<p>倾角不一定为0，一般为椭圆形轨道</p>
+<p>星下点为8字形的原因</p>
+<p>周期与地球相同，同步卫星的轨道与赤道呈一定倾角，在赤道附近为近地点，南北高纬度时为远地点，由远地点向近地点偏移时速度加快，由近地点向高纬度的远地点偏移时速度变慢，周而复始，所以相对于匀速旋转的地球而言就画出了一个8字</p>
+<h4 id="地球静止轨道（GEO）"><a href="#地球静止轨道（GEO）" class="headerlink" title="地球静止轨道（GEO）"></a>地球静止轨道（GEO）</h4><p>地球静止轨道卫星实际上是特殊的地球同步轨道卫星，它的倾角为0</p>
+<p>在这样的轨道上运行的卫星将始终位于赤道某地的上空，相对于地球表面是静止的</p>
+<p>卫星高度35786km</p>
+<h4 id="补充-1"><a href="#补充-1" class="headerlink" title="补充"></a>补充</h4><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221204200735876.png" srcset="/img/loading.gif" lazyload alt="image-20221204200735876"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221204200748998.png" srcset="/img/loading.gif" lazyload alt="image-20221204200748998"></p>
+<p>​    太阳同步轨道属于<strong>中低轨道</strong>，空间分辨率更高，离得越近看得越清；地球静止轨道属于<strong>高轨道</strong>，站得高看得远，自然覆盖范围更广。</p>
+<p>​    两种轨道可以互补达到最佳的监测效果，所以很多卫星星座采用这样的组合方式，比如高分系列，以此取得更高的时空分辨率。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221204201323784.png" srcset="/img/loading.gif" lazyload alt="image-20221204201323784"></p>
+<h3 id="陆地卫星系列"><a href="#陆地卫星系列" class="headerlink" title="陆地卫星系列"></a>陆地卫星系列</h3><p>美国Landsat卫星系列、法国SPOT卫星系列、欧洲Sentinel卫星系列、中国资源卫星系列、中国环境减灾卫星系列、印度IRS卫星系列</p>
+<p>用于陆地资源和环境探测的卫星</p>
+<ol>
+<li>主要为近极地太阳同步轨道</li>
+<li>传感器种类多样，包括多光谱、高光谱、热红外、雷达</li>
+<li>空间分辨率从亚米级到千米级</li>
+</ol>
+<h3 id="气象卫星系列"><a href="#气象卫星系列" class="headerlink" title="气象卫星系列"></a>气象卫星系列</h3><p>美国气象卫星</p>
+<p>地球静止轨道卫星GOES系列</p>
+<p>太阳同步轨道卫星NOAA系列</p>
+<p>欧洲气象卫星</p>
+<p>Meteosat系列</p>
+<p>中国气象卫星</p>
+<p>FY</p>
+<p>气象卫星的轨道分为：低轨（近极地太阳同步轨道）和高轨（地球静止轨道）</p>
+<p>气象卫星的特点：</p>
+<p>短周期重复观测</p>
+<p>成像面积大，有利于宏观同步观测信息</p>
+<p>资料来源连续、实时性强、成本低</p>
+<h3 id="海洋卫星系列"><a href="#海洋卫星系列" class="headerlink" title="海洋卫星系列"></a>海洋卫星系列</h3><p>欧洲海洋卫星</p>
+<p>主要由欧洲空间局(ESA)研发运营。主要由Metop、SMOS、CryoSat系列。CryoSat-2卫星能对极地冰层和海洋浮冰进行精确监测。</p>
+<p>美国海洋卫星</p>
+<p>主要由国家海洋与大气管理局(NOAA)和宇航局(NASA)运营。海洋水色卫星主要由<strong>SeaStar</strong>、Terra/Aqua等。海洋动力环境卫星主要有<strong>Seasat</strong>、Geosat、Jason系列等。</p>
+<p>中国海洋卫星</p>
+<p>主要由国家海洋局(SOA)运营。包括海洋水色卫星HY-1系列(HY-1A、HY-1B)和海洋动力环境卫星HY-2系列。</p>
+<ol>
+<li><strong>需要高空遥感平台</strong>，以进行大面积同步覆盖的观测</li>
+<li>以<strong>微波</strong>为主——具备全天时(昼夜)、全天候工作能力和穿云透雾的能力</li>
+<li>具有一定的透视海水能力，以便取得海水较深部的信息</li>
+<li>电磁波与激光、声波结合扩大海洋遥感探测手段</li>
+<li>需要海面实测资料对海洋遥感进行校正</li>
+</ol>
+<h3 id="遥感图像分辨率"><a href="#遥感图像分辨率" class="headerlink" title="遥感图像分辨率"></a>遥感图像分辨率</h3><p>遥感图像具有三方面的特征：</p>
+<p>几何特征（目标地物的大小、形状、空间分布特点）</p>
+<p>物理特征（目标地物的属性特点）</p>
+<p>时间特征（目标地物的变化动态特点）</p>
+<h4 id="空间分辨率（几何特征）"><a href="#空间分辨率（几何特征）" class="headerlink" title="空间分辨率（几何特征）"></a>空间分辨率（几何特征）</h4><p><strong>空间分辨率：针对遥感器或图像而言的，指图像上能够详细区别的最小单元的尺寸或大小</strong></p>
+<p>地面分辨率：针对地面而言，指可以识别的最小地面距离或最小目标物的大小</p>
+<p>影响因素：传感器与探测目标的距离（航高），单位瞬时视场角（IFOV）</p>
+<p>地物尺寸小于像元空间分辨率时，一个像元由多个物体组成（混合像元），像元值反映反射/发射能量最强的部分</p>
+<p>地物尺寸大于像元空间分辨率时，一个像元只代表一个物体的一部分（纯净像元），即一个物体由多个像元表示。</p>
+<h4 id="光谱分辨率（物理特征）"><a href="#光谱分辨率（物理特征）" class="headerlink" title="光谱分辨率（物理特征）"></a>光谱分辨率（物理特征）</h4><p><strong>光谱分辨率是指传感器在接受目标辐射的光谱时能分辨的最小波长间隔。</strong>    </p>
+<p>传感器的通道数、每个通道的带宽、中心波长三个因素决定光谱分辨率。</p>
+<p>传感器的波段数量越多、带宽越窄, 其光谱分辨率就越高。光谱分辨率越高，获得的图像就越能反映出地物的光谱特性，不同地物间的差别在图像上就越能更好地体现出来。</p>
+<p>我们能够在遥感图像上区分不同物体，是因为它们在不同的波长区间表现出不同的光谱特征。<br>差异较大的类 可用较宽的波段范围区分<br>差异较小的类 需要较窄的波段范围区分</p>
+<blockquote>
+<p>波段并非简单地越多越好，而是要区别对待</p>
+</blockquote>
+<h4 id="辐射分辨率-（物理特征）"><a href="#辐射分辨率-（物理特征）" class="headerlink" title="辐射分辨率 （物理特征）"></a>辐射分辨率 （物理特征）</h4><p><strong>传感器接收波谱信号时，能分辨的最小辐射度差（传感器的灵敏度）。</strong></p>
+<p>在遥感图像上表现为每一像元的辐射量化级。一般用灰度的分级数来表示，即最暗到最亮灰度值（亮度值）间分级的数目－－量化级数。</p>
+<p>辐射分辨率越高，则对地物的识别与区分能力越强</p>
+<p>一般空间分辨率越高，将伴随辐射分辨率的降低（因为IFOV变小了，入射能量小，辐射测量不明显）</p>
+<h4 id="时间分辨率（时间特征）"><a href="#时间分辨率（时间特征）" class="headerlink" title="时间分辨率（时间特征）"></a>时间分辨率（时间特征）</h4><p><strong>指传感器传感器重复观测的最小时间间隔</strong></p>
+<p>时间分辨率越高，越能描述对象的动态变化过程</p>
+<p>时间分辨率和空间分辨率互为限制</p>
+<blockquote>
+<p>根据遥感系统探测周期的长短和探测目的可将时间分辨率分为三个类型</p>
+</blockquote>
+<ol>
+<li>超短或短周期时间分辨率：主要指气象卫星系列，一小时为单位，用来反映一天以内的变化。如探测大气海洋物理现象、突发性灾害监测、污染源监测等</li>
+<li>中周期时间分辨率：主要指对地观测的资源环境卫星系列，以天为单位，用以反映月、年内的变化。如探测植物的季相节律，进行作物估产与动态监测，农林牧再生资源的调查，旱涝灾害监测</li>
+<li>长时间时间分辨率：主要指较长时间间隔的各类遥感信息，以年为单位的变化。如湖泊消长、城市扩展、资源变化。</li>
+</ol>
+<h2 id="遥感图像处理基础"><a href="#遥感图像处理基础" class="headerlink" title="遥感图像处理基础"></a>遥感图像处理基础</h2><h3 id="遥感图像的数字表达"><a href="#遥感图像的数字表达" class="headerlink" title="遥感图像的数字表达"></a>遥感图像的数字表达</h3><p>有模拟信号（连续值）、数字信号（离散值）两种</p>
+<p>模拟遥感图像也称光学图像或连续图像。以胶片或其他光学成像载体的形式记录地物电磁信息</p>
+<p>数字遥感图像以数字形式记录地物电磁波信息。以数字形式在计算机中存储、运算、输出的图像。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205165827154.png" srcset="/img/loading.gif" lazyload alt="image-20221205165827154"></p>
+<h3 id="数模变换的过程"><a href="#数模变换的过程" class="headerlink" title="数模变换的过程"></a>数模变换的过程</h3><ol>
+<li>首先进行空间坐标的离散化</li>
+<li>之后进行灰度量化</li>
+</ol>
+<h3 id="遥感图像的存储"><a href="#遥感图像的存储" class="headerlink" title="遥感图像的存储"></a>遥感图像的存储</h3><h4 id="BSQ格式"><a href="#BSQ格式" class="headerlink" title="BSQ格式"></a>BSQ格式</h4><p>波段交叉格式</p>
+<p>按照图像的波段顺序存储为独立文件记录存放，每个波段文件则以像元的行、列序号排列</p>
+<p><strong>存完第一个波段所有像元信息，之后是第二个波段所有像元信息</strong></p>
+<h4 id="BIP格式"><a href="#BIP格式" class="headerlink" title="BIP格式"></a>BIP格式</h4><p>像元交叉格式</p>
+<p>每个像元按波段顺序交叉排序</p>
+<p><strong>第一个像元的所有波段信息，接着是第二个像元的所有波段信息，然后是第三个像元……</strong></p>
+<h4 id="BIL格式"><a href="#BIL格式" class="headerlink" title="BIL格式"></a>BIL格式</h4><p>行交叉格式</p>
+<p>逐行按波段次序相间排列</p>
+<p><strong>先存储第一个波段的第一行，接着第二个波段的第一行，然后第三个波段的第一行……</strong></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205193534990.png" srcset="/img/loading.gif" lazyload alt="image-20221205193534990"></p>
+<h4 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h4><ol>
+<li>BSQ是记录多波段数据最简单的格式，便于单波段选取和处理。</li>
+<li>BIP格式便于从整幅图像中提取小的子区，适于提取典型地物光谱曲线，因为同一个像元各波段的灰度值都集中在一起，可以一次读出，调用方便。</li>
+<li>BIL具有另外两种格式的折中特征。</li>
+</ol>
+<h3 id="目视解译"><a href="#目视解译" class="headerlink" title="目视解译"></a>目视解译</h3><p>指专业人员通过直接观察或借助辅助判读仪器在遥感图像上获取特定目标地物信息的过程</p>
+<h3 id="计算机解译"><a href="#计算机解译" class="headerlink" title="计算机解译"></a>计算机解译</h3><p>以计算机为支撑，利用<strong>模式识别与人工智能技术相结合</strong>，根据遥感图像中目标地物的各种影像特征（颜色、形状、纹理和空间位置），结合<strong>专家知识库</strong>中目标地物的解译经验和成像规律等知识进行分析和整理，实现对遥感图像的理解，完成对遥感图像的解译</p>
+<h3 id="加色法"><a href="#加色法" class="headerlink" title="加色法"></a>加色法</h3><h4 id="三原色"><a href="#三原色" class="headerlink" title="三原色"></a>三原色</h4><p>若三种颜色，其中任一种都不能由其余两种颜色混合相加产生，这三种颜色按一定比例混合，可以形成各种色调的颜色，称为三原色。红绿蓝。</p>
+<h3 id="互补色"><a href="#互补色" class="headerlink" title="互补色"></a>互补色</h3><p>若两种颜色混合产生白色或灰色，这两种颜色就为互补色。如红和青，绿和品红、蓝和黄</p>
+<h3 id="真彩色合成"><a href="#真彩色合成" class="headerlink" title="真彩色合成"></a>真彩色合成</h3><p>即红色、绿色、蓝色波段分别赋予红、绿、蓝通道，获得自然彩色合成影像，图像的色彩与原地区景物的实际色彩一致。</p>
+<h3 id="标准假彩色合成"><a href="#标准假彩色合成" class="headerlink" title="标准假彩色合成"></a>标准假彩色合成</h3><p>即近红外、红色、绿色波段分别赋予红绿蓝通道，获得图像植被成红色，由于突出表现了植被的特征，应用广泛，被称为标准假彩色。</p>
+<h3 id="地物的识别特征"><a href="#地物的识别特征" class="headerlink" title="地物的识别特征"></a>地物的识别特征</h3><p>色调、颜色、阴影、形状、纹理、大小、位置、图型、相关布局</p>
+<h3 id="遥感图像特征的统计分析"><a href="#遥感图像特征的统计分析" class="headerlink" title="遥感图像特征的统计分析"></a>遥感图像特征的统计分析</h3><h4 id="影像灰度均值"><a href="#影像灰度均值" class="headerlink" title="影像灰度均值"></a>影像灰度均值</h4><p>指一幅影像中所有像元灰度值的算术平均值，它反映的是影像中地物的平均反射强度，大小由波谱信息决定。同理中值和众数</p>
+<h4 id="影像灰度数值域"><a href="#影像灰度数值域" class="headerlink" title="影像灰度数值域"></a>影像灰度数值域</h4><p>它是影像最大灰度值和最小灰度值的差值，它反映了影像灰度值的变化程度，从而间接反映了影像的信息量。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205204847953.png" srcset="/img/loading.gif" lazyload alt="image-20221205204847953"></p>
+<h3 id="影像直方图"><a href="#影像直方图" class="headerlink" title="影像直方图"></a>影像直方图</h3><p>指影像中所有灰度值的概率分布。横坐标表示影像的灰度级变化，纵坐标表示影像中各个灰度级像元数占整幅影像像元数的百分比。</p>
+<p>作用：直观地了解图像的亮度值分布范围、峰值的位置、均值以及亮度值分布的离散程度。直方图的曲线可以反映图像的质量差异。</p>
+<p>直方图是<strong>描述图像质量的可视化图表</strong>。</p>
+<p>正态分布：反差适中，亮度分布均匀，层次丰富，图像质量高。<br>偏态分布：图像偏亮或偏暗，层次少，质量较差。</p>
+<h3 id="相关系数"><a href="#相关系数" class="headerlink" title="相关系数"></a>相关系数</h3><p>相关系数是描述波段图像间相关程度的统计量，反映了两个或两个以上波段图像所包含的信息的重叠程度。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205210206584.png" srcset="/img/loading.gif" lazyload alt="image-20221205210206584"></p>
+<h3 id="相关矩阵"><a href="#相关矩阵" class="headerlink" title="相关矩阵"></a>相关矩阵</h3><p>将N个波段相互间的相关系数排列在一起组成的矩阵。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205210329350.png" srcset="/img/loading.gif" lazyload alt="image-20221205210329350"></p>
+<h2 id="几何校正"><a href="#几何校正" class="headerlink" title="几何校正"></a>几何校正</h2><h3 id="几何变形"><a href="#几何变形" class="headerlink" title="几何变形"></a>几何变形</h3><p>主要是5个方面的影响</p>
+<ol>
+<li>遥感平台位置和运动状态变化的影响（受航高、航速、俯仰、翻滚、偏航影响）</li>
+<li>地形起伏的影响（高点在图像上的像点相对于平面点向原理图像中心的方向移动）</li>
+<li>地球表面曲率的影响（像点位移和像元对应于地面宽度的不等）</li>
+<li>大气折射的影响（大气折射是辐射传播变成一条曲线）</li>
+<li>地球自转的影响（造成影像偏移）</li>
+</ol>
+<h3 id="几何校正-1"><a href="#几何校正-1" class="headerlink" title="几何校正"></a>几何校正</h3><p>校正多种因素引起的遥感图像变形，从而使之实现与标准图像或地图的几何整合。</p>
+<h4 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h4><p>利用图像坐标与地面坐标/另一图像坐标/地图坐标之间的数学关系，即输入图像和输出图像间的坐标转换关系实现。</p>
+<blockquote>
+<p>分为</p>
+<p>几何粗较正-系统畸变-主要校正系统性内部误差，校正后图像仍存在几何变形</p>
+<p>几何精校正-随机畸变-利用地面控制点（GCP）和数学模型来校正，不考虑畸变的具体形成原因，只考虑如何利用畸变模型来校正遥感图像。</p>
+</blockquote>
+<h4 id="数字图像几何纠正的两个基本环节"><a href="#数字图像几何纠正的两个基本环节" class="headerlink" title="数字图像几何纠正的两个基本环节"></a>数字图像几何纠正的两个基本环节</h4><p>像元坐标变换</p>
+<p>像元灰度值重采样</p>
+<h4 id="主要过程"><a href="#主要过程" class="headerlink" title="主要过程"></a>主要过程</h4><ol>
+<li>地面控制点选取</li>
+<li>多项式校正模型</li>
+<li>坐标变化</li>
+<li>灰度重采样</li>
+<li>校正精度评价</li>
+</ol>
+<h5 id="地面控制点应具备的特征"><a href="#地面控制点应具备的特征" class="headerlink" title="地面控制点应具备的特征"></a>地面控制点应具备的特征</h5><ol>
+<li>在图像上有明显、清晰的定位识别标志，如道路交叉点</li>
+<li>地物不随时间变化</li>
+<li>在未经过地形校正的图像上选取控制点时，应在同一地形高度上进行。</li>
+</ol>
+<h5 id="地面控制点选取的注意事项"><a href="#地面控制点选取的注意事项" class="headerlink" title="地面控制点选取的注意事项"></a>地面控制点选取的注意事项</h5><ol>
+<li>控制点分布均匀</li>
+<li>图像边界、四角需有分布</li>
+<li>满足一定数量</li>
+<li>地形起伏大的区域多选</li>
+</ol>
+<h5 id="多项式校正模型"><a href="#多项式校正模型" class="headerlink" title="多项式校正模型"></a>多项式校正模型</h5><p>阶数为n时，最少控制点数目为M=（N+1）*（N+2）/2</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205214213315.png" srcset="/img/loading.gif" lazyload alt="image-20221205214213315"></p>
+<h5 id="坐标变换"><a href="#坐标变换" class="headerlink" title="坐标变换"></a>坐标变换</h5><p>校正的最终目的是确认校正后图像的行列式值，然后找到新图像中每一像元的亮度值</p>
+<h5 id="重采样"><a href="#重采样" class="headerlink" title="重采样"></a>重采样</h5><p>最近领域法：距离实际位置最近的像元的灰度值作为输出像元的灰度值</p>
+<p>方法简单易用，计算量小，保留原图像的像元值，但是会造成地物像元值不连续，边界出现锯齿状</p>
+<p>双线性内插法：使用邻近4个像元的像元值，按照其距内插点的距离赋予不同的权重，进行线性内插。</p>
+<p>对像元值不连续的现象有明显改善；计算量增加，有平滑效果，使对比度明显的分界线变得模糊，丧失细节；破坏原图像的像元值</p>
+<p>三次卷积内插法：使用邻近的16个像元的像素值，对其赋予不同的权重进行内插，增加临近点以获得更好地插值精度</p>
+<p>对边缘有所增强，并且具有均衡化和清晰化的效果；计算量较大；破坏了原图像的像元值。</p>
+<h3 id="镶嵌"><a href="#镶嵌" class="headerlink" title="镶嵌"></a>镶嵌</h3><p>将多幅图像连接合并，生成一幅完整包含感兴趣区域的图像。</p>
+<h4 id="关键问题一：镶嵌前提"><a href="#关键问题一：镶嵌前提" class="headerlink" title="关键问题一：镶嵌前提"></a>关键问题一：镶嵌前提</h4><p>图像之间有较高的配准精度</p>
+<p>图像之间波段数目相同</p>
+<p>相邻图像之间有一定的重叠</p>
+<p>指定参照图像作为对比度匹配和设置输出图像的地理投影、像元大小、数据类型的基准</p>
+<h4 id="关键问题二：解决差异-图像匹配"><a href="#关键问题二：解决差异-图像匹配" class="headerlink" title="关键问题二：解决差异-图像匹配"></a>关键问题二：解决差异-图像匹配</h4><p>不同图像的对比度和亮度存在差异，需要进行图像匹配</p>
+<p>方法有：<strong>直方图匹配</strong>、<strong>彩色亮度匹配</strong></p>
+<h5 id="关键问题三：重叠区域像元值的确定（非重点）"><a href="#关键问题三：重叠区域像元值的确定（非重点）" class="headerlink" title="关键问题三：重叠区域像元值的确定（非重点）"></a>关键问题三：重叠区域像元值的确定（非重点）</h5><p>平均值法、切割线法、线性插值法</p>
+<h2 id="辐射校正"><a href="#辐射校正" class="headerlink" title="辐射校正"></a>辐射校正</h2><h3 id="辐射误差的主要来源"><a href="#辐射误差的主要来源" class="headerlink" title="辐射误差的主要来源"></a>辐射误差的主要来源</h3><ol>
+<li>传感器造成的辐射误差（由光学系统或光电变换系统的特征所形成的）</li>
+<li>大气造成的辐射误差（大气对电磁波的散射和吸收）</li>
+<li>地形条件造成的辐射误差（阴影）</li>
+<li>光照条件造成的辐射误差（主要是太阳高度角的影响）</li>
+</ol>
+<h3 id="为什么进行辐射校正？"><a href="#为什么进行辐射校正？" class="headerlink" title="为什么进行辐射校正？"></a>为什么进行辐射校正？</h3><p>遥感图像受到辐射误差来源复杂，为了使图像尽量准确地反映地物地反射或发射地电磁波信息，需要对遥感图像进行辐射校正。</p>
+<h3 id="辐射校正定义"><a href="#辐射校正定义" class="headerlink" title="辐射校正定义"></a>辐射校正定义</h3><p>针对各种辐射误差进行校正，消除遥感图像中包含地各种辐射失真，使得遥感图像尽可能准确地梵音地物目标辐射出的电磁波信号。</p>
+<h3 id="辐射校正包括"><a href="#辐射校正包括" class="headerlink" title="辐射校正包括"></a>辐射校正包括</h3><p>传感器响应特性引起的辐射畸变校正</p>
+<p>大气校正</p>
+<p>地形起伏引起的辐射畸变校正</p>
+<p>太阳高度角引起的辐射畸变校正</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205232257743.png" srcset="/img/loading.gif" lazyload alt="image-20221205232257743"></p>
+<h3 id="DN值"><a href="#DN值" class="headerlink" title="DN值"></a>DN值</h3><p>遥感图像像元亮度值，记录地物的灰度值。无单位，是一个整数值，值的大小与传感器的辐射分辨率、地物反射率、地物发射率、大气透过率和散射率等相关。</p>
+<h3 id="地表反射率"><a href="#地表反射率" class="headerlink" title="地表反射率"></a>地表反射率</h3><p>地面反射辐射量与入射辐射量之比，表征地面对太阳辐射地吸收和反射能力。反射率越大，地面吸收太阳辐射越少；反射率越小，地面吸收太阳辐射越多</p>
+<h3 id="表观反射率"><a href="#表观反射率" class="headerlink" title="表观反射率"></a>表观反射率</h3><p>指大气层顶的反射率，辐射定标的结果之一，大气层顶表观反射率，简称表观反射率，又称视反射率。</p>
+<h3 id="辐射定标（定标方程）"><a href="#辐射定标（定标方程）" class="headerlink" title="辐射定标（定标方程）"></a>辐射定标（定标方程）</h3><p>将传感器每个探测元所输出信号的灰度值（DN值）转换为探测器对应像元内的辐射亮度值、表观反射率等物理量的过程。</p>
+<p>目的：消除传感器本身的误差，确定传感器入瞳处的准确辐射值，辐射定标是遥感定量化研究的重要前提。</p>
+<p>方法：实验室定标、星上/机上定标、场地定标</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205234018697.png" srcset="/img/loading.gif" lazyload alt="image-20221205234018697"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206153521184.png" srcset="/img/loading.gif" lazyload alt="image-20221206153521184"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221205234045212.png" srcset="/img/loading.gif" lazyload alt="image-20221205234045212"></p>
+<h3 id="大气校正（记忆一下模型）"><a href="#大气校正（记忆一下模型）" class="headerlink" title="大气校正（记忆一下模型）"></a>大气校正（记忆一下模型）</h3><p>消除大气散射、吸收、发射等引起的辐射误差的处理过程</p>
+<p>大气校正的方法主要分为两类：基于物理模型和基于统计模型</p>
+<blockquote>
+<p> 基于物理模型，又称辐射传输模型法，是利用电磁波在大气中的辐射传输原理建立起来的模型对遥感图像进行大气校正的方法。</p>
+</blockquote>
+<blockquote>
+<p>常用的辐射传输模型：6S模型、MODTRAN模型、FLAASH等</p>
+</blockquote>
+<blockquote>
+<p>基于统计模型的大气校正</p>
+</blockquote>
+<h4 id="暗目标像元法"><a href="#暗目标像元法" class="headerlink" title="暗目标像元法"></a>暗目标像元法</h4><p>反射率很低的地物被称为暗目标，此时遥感器接收的辐射主要来自于大气的程辐射。</p>
+<p>方法：每个波段的DN值减去该波段按目标像元的值。</p>
+<p>前提：假设整幅图像的大气散射影响均一，忽略大气多次散射作用和邻近像元漫反射作用</p>
+<p>优点：简单</p>
+<p>缺点：只考虑大气程辐射的影响，且得到的仍是DN值，需要适当的大气校正模型，计算得到的地物真实的反射率。</p>
+<h4 id="地面线性回归法"><a href="#地面线性回归法" class="headerlink" title="地面线性回归法"></a>地面线性回归法</h4><p>将地表实测的地物反射率值与遥感影像上对应的像元DN值进行分析，建立经验回归方程。然后将回归方程应用于整个图像，得到校正后的反射率图像。</p>
+<p>优点：简单直接</p>
+<p>缺点：对实测样本数量、代表性要求高。（数量要尽可能多，尽可能覆盖各类典型地物）</p>
+<h3 id="地形校正"><a href="#地形校正" class="headerlink" title="地形校正"></a>地形校正</h3><p>尤其是对于山区的遥感图像进行大气校正时，需要基于DEM数据，考虑坡度的影响，还需要考虑地形对太阳直射光的遮挡、突出地形对周围地物造成的辐射增量等多重因素的影响</p>
+<h3 id="太阳高度角校正"><a href="#太阳高度角校正" class="headerlink" title="太阳高度角校正"></a>太阳高度角校正</h3><p>日地距离校正用于标准化地球和太阳之间距离的季节变化</p>
+<h3 id="大气程辐射"><a href="#大气程辐射" class="headerlink" title="大气程辐射"></a>大气程辐射</h3><p> 大气程辐射是太阳辐射在大气传输过程中各组分及气溶胶微粒散射后，未经地物反射，直接到达传感器的辐射。</p>
+<p>大气程辐射叠加在地面反射的电磁波上，是与地面无关的大气扰动，降低了对比度，属于背景噪声，是需要修正的重要内容。</p>
+<h2 id="图像增强"><a href="#图像增强" class="headerlink" title="图像增强"></a>图像增强</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>图像增强与变换的目标是突出相关的专题信息，提高图像的视觉效果，使分析者更容易识别图像内容，从图像中提取更有用的定量化信息。</p>
+<p>图像增强是以特定目的，突出遥感图像中某些信息的，削弱或去除某些不需要的的信息，使图像更易判读。</p>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>提高图像的视觉效果，突出相关的专题信息，使分析者更容易识别图像内容，从图像中提取更有用的定量化信息。</p>
+<h3 id="主要包括内容"><a href="#主要包括内容" class="headerlink" title="主要包括内容"></a>主要包括内容</h3><p>空间域：对比度增强、直方图匹配、图像平滑、图像锐化</p>
+<p>频率域：高通滤波、低通滤波</p>
+<p>彩色增强：假彩色增强、伪彩色增强、彩色变换</p>
+<p>图像的代数运算</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206163514207.png" srcset="/img/loading.gif" lazyload alt="image-20221206163514207"></p>
+<h3 id="图像灰度直方图"><a href="#图像灰度直方图" class="headerlink" title="图像灰度直方图"></a>图像灰度直方图</h3><p>以每个像元为单位，表示图像中各亮度值或亮度值区间像元出现的频率或数量的分布图。</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206182506311.png" srcset="/img/loading.gif" lazyload alt="image-20221206182506311"></p>
+<h3 id="对比度增强（又称反差增强、灰度拉伸、灰度变换）"><a href="#对比度增强（又称反差增强、灰度拉伸、灰度变换）" class="headerlink" title="对比度增强（又称反差增强、灰度拉伸、灰度变换）"></a>对比度增强（又称反差增强、灰度拉伸、灰度变换）</h3><p>对比度=最大亮度/最小亮度</p>
+<p>可以使图像的亮度范围拉伸或压缩成指定的显示范围，从而突出图像像元之间的对比度 ，使图像变清晰，特征明显</p>
+<blockquote>
+<p>对比度低的原因</p>
+<p>不同地物经常在可见光、近红外和中红外具有相似的辐射能量，当图像中具有相似辐射强度的地物比较集中时，会导致图像的低对比度</p>
+<p>实际的遥感图像并不能充分利用遥感器的全部记录范围，遥感图像中记录的地物亮度值往往局限在比较小的亮度范围内，不能达到其全部亮度值范围，导致图像显示时的低对比度。</p>
+</blockquote>
+<h4 id="线性变换（线性拉伸）"><a href="#线性变换（线性拉伸）" class="headerlink" title="线性变换（线性拉伸）"></a>线性变换（线性拉伸）</h4><p>采用<strong>线性</strong>或<strong>分段线性</strong>的函数来改善图像对比度</p>
+<h4 id="非线性变换（非线性拉伸）"><a href="#非线性变换（非线性拉伸）" class="headerlink" title="非线性变换（非线性拉伸）"></a>非线性变换（非线性拉伸）</h4><p>对数变化和指数变换</p>
+<p>直方图均衡化</p>
+<p>直方图匹配（直方图规定）</p>
+<h3 id="线性变换"><a href="#线性变换" class="headerlink" title="线性变换"></a>线性变换</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206182652944.png" srcset="/img/loading.gif" lazyload alt="image-20221206182652944"></p>
+<p>线性变换是按照比例扩大原始灰度等级的范围，通常为零充满显示设备的动态范围，使输出图像直方图的两端达到饱和。其结果就是在输出图像中加强图像中地物特征的对比度。</p>
+<p>缺点：同样的拉伸函数应用于所有的亮度值，如果只是对某个灰度区间感兴趣，则不能有效的突出</p>
+<h3 id="分段线性变换"><a href="#分段线性变换" class="headerlink" title="分段线性变换"></a>分段线性变换</h3><p>为了突出感兴趣目标所在的灰度区间，相对抑制那些不感兴趣的灰度区间，可采用分段线性变换。</p>
+<h3 id="非线性变换"><a href="#非线性变换" class="headerlink" title="非线性变换"></a>非线性变换</h3><h4 id="指数变换"><a href="#指数变换" class="headerlink" title="指数变换"></a>指数变换</h4><p>待研究解译的地物目标主要分布于亮区或则目标本身比较明亮时，采用指数变换</p>
+<h4 id="对数变换"><a href="#对数变换" class="headerlink" title="对数变换"></a>对数变换</h4><p>常用于扩展低亮区（暗区）、压缩高亮区的对比度，使暗区影像层次增多，突出隐伏于暗区影像中的某些地物目标</p>
+<h4 id="直方图调整"><a href="#直方图调整" class="headerlink" title="直方图调整"></a>直方图调整</h4><p>主要有均衡化、规定化和正态化</p>
+<h3 id="直方图均衡化"><a href="#直方图均衡化" class="headerlink" title="直方图均衡化"></a>直方图均衡化</h3><p>根据图像亮度值得出现频率来重新分配它们得亮度显示范围，使一定范围内得像元数量大致相等，得到一幅灰度直方图为均匀分布的新图像。实质是非线性变换。</p>
+<h3 id="直方图规定化（直方图匹配）"><a href="#直方图规定化（直方图匹配）" class="headerlink" title="直方图规定化（直方图匹配）"></a>直方图规定化（直方图匹配）</h3><p>将一幅图像的直方图变为指定形状的直方图，从而使原始图像进行增强处理的一种方法，也属于非线性变换</p>
+<p>直方图的规定化对不同时间获取的同一地区或邻接地区的图像，或者<strong>由于太阳高度角或大气影响引起差异的图像匹配</strong>很有用，特别是对图像镶嵌或变化检测有用。</p>
+<blockquote>
+<p>过程：对待匹配图像和参考图像的直方图都做均衡化，变成相同的均匀直方图</p>
+<p>再以参考图像的均衡化变换函数对待匹配图像做均衡化的逆运算，从而使待匹配图像的直方图和参考图像的直方图类似。</p>
+</blockquote>
+<h3 id="对比度增强补充"><a href="#对比度增强补充" class="headerlink" title="对比度增强补充"></a>对比度增强补充</h3><p>多数灰度拉伸算法会引起部分信息的丢失，因此主要用于视觉展示，而不适于对灰度拉伸后的图像做图像分类、变化检测和其他处理</p>
+<h3 id="波段间代数运算"><a href="#波段间代数运算" class="headerlink" title="波段间代数运算"></a>波段间代数运算</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206190506661.png" srcset="/img/loading.gif" lazyload alt="image-20221206190506661"></p>
+<p>归一化植被指数，属于波段间的代数运算，一般在-1到1之间</p>
+<p>植被区域一般在0.3-0.8之间，高值代表植被覆盖度高</p>
+<p>云、水体、雪一般为负值</p>
+<h3 id="滤波"><a href="#滤波" class="headerlink" title="滤波"></a>滤波</h3><h4 id="空间域滤波"><a href="#空间域滤波" class="headerlink" title="空间域滤波"></a>空间域滤波</h4><p>是改变空间频率的过程，以强调或抑制图像的特定特征。</p>
+<p>空间频率描述图像色调变化的频率/图像灰度值相对于领域变化的方式</p>
+<blockquote>
+<p>空间域滤波包括：</p>
+<p>平滑（低通）滤波器</p>
+<p>锐化（高通）滤波器</p>
+</blockquote>
+<h4 id="平滑滤波器的模式"><a href="#平滑滤波器的模式" class="headerlink" title="平滑滤波器的模式"></a>平滑滤波器的模式</h4><p>平滑也叫低通滤波，<strong>目的在于消除图像中的各种干扰噪声</strong>，使图像中的高频成分消退，平滑掉图像的细节，使其反差降低，保存低频成分，积分</p>
+<p>均值滤波</p>
+<p>加权平均模板法</p>
+<p>中值滤波</p>
+<h4 id="锐化滤波器的模式"><a href="#锐化滤波器的模式" class="headerlink" title="锐化滤波器的模式"></a>锐化滤波器的模式</h4><p>锐化<strong>突出图像的边缘信号</strong>，可使地物边界细节增强，不但提高图像的视觉效果，而且还便于对图像的形状特征更好地识别，微分</p>
+<p>目的是加强图像中地物的细节边缘和轮廓，作用是使灰度 反差增强</p>
+<p>交叉微分算法（Roberts算法）</p>
+<p>梯度锐化</p>
+<p>Sobel算法</p>
+<p>拉普拉斯算子</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206191644838.png" srcset="/img/loading.gif" lazyload alt="image-20221206191644838"></p>
+<h4 id="频率域滤波"><a href="#频率域滤波" class="headerlink" title="频率域滤波"></a>频率域滤波</h4><p>过程：傅里叶正变换-滤波器（频率域乘积运算）-傅里叶逆变换</p>
+<h3 id="彩色增强"><a href="#彩色增强" class="headerlink" title="彩色增强"></a>彩色增强</h3><p>彩色合成就是利用眼睛的视觉特性，合成出不同颜色，一般是用红绿蓝三基色去合成不同颜色。</p>
+<h4 id="真彩色合成-1"><a href="#真彩色合成-1" class="headerlink" title="真彩色合成"></a>真彩色合成</h4><p>即红色、绿色、蓝色波段分别赋予红、绿、蓝通道，获得自然彩色合成影像，图像的色彩与原地区景物的实际色彩一致。</p>
+<h4 id="标准假彩色合成-1"><a href="#标准假彩色合成-1" class="headerlink" title="标准假彩色合成"></a>标准假彩色合成</h4><p>即近红外、红色、绿色波段分别赋予红绿蓝通道，获得图像植被成红色，由于突出表现了植被的特征，应用广泛，被称为标准假彩色。</p>
+<h4 id="伪彩色增强-密度分割"><a href="#伪彩色增强-密度分割" class="headerlink" title="伪彩色增强/密度分割"></a>伪彩色增强/密度分割</h4><p>使用密度分割，把黑白图像按灰度值划分等级，按线性或者非线性映射函数变换为不同彩色的彩色图像的过程</p>
+<h4 id="伪彩色密度分割"><a href="#伪彩色密度分割" class="headerlink" title="伪彩色密度分割"></a>伪彩色密度分割</h4><p>一幅单波段黑白遥感图像按照灰度的大小，划分为不同的层，并对每层赋予不同的颜色，使之变为一幅彩色图像</p>
+<p>密度分割中的彩色是人为赋予的，与地物的真实色彩毫无关系，因此称为伪彩色。</p>
+<h3 id="图像变换"><a href="#图像变换" class="headerlink" title="图像变换"></a>图像变换</h3><h4 id="主成分变换"><a href="#主成分变换" class="headerlink" title="主成分变换"></a>主成分变换</h4><p>也称为主分量分析或KL变换，可以用少数主要波段表示图像的大部分信息，从而实现数据压缩和图像增强</p>
+<h4 id="缨帽变换"><a href="#缨帽变换" class="headerlink" title="缨帽变换"></a>缨帽变换</h4><p>又称KT变换，空间坐标发生旋转，指向与地物特别是和植被生长以及土壤有密切关系的方向。</p>
+<h4 id="图像融合的方法"><a href="#图像融合的方法" class="headerlink" title="图像融合的方法"></a>图像融合的方法</h4><p>采用某种算法将覆盖同一地区、同一时期的两幅/多幅空间配准影响融合生成满足某种要求的影像的技术。</p>
+<p>乘法融合</p>
+<p>主成分变换融合</p>
+<p>IHS变换融合</p>
+<p>I亮度，H色调，饱和度S</p>
+<h4 id="基于IHS变换的图像融合"><a href="#基于IHS变换的图像融合" class="headerlink" title="基于IHS变换的图像融合"></a>基于IHS变换的图像融合</h4><ol>
+<li>将低空间分辨率的多光谱影像变换到IHS空间，得到IHS三分量</li>
+<li>拉伸高分辨率图像（全色波段），使其直方图与I分量匹配（直方图匹配）</li>
+<li>用拉伸后的高分辨率图像（全色波段）替换I分量</li>
+<li>与H、S分量进行IHS逆变换得到高分辨率融合影像</li>
+</ol>
+<p>优点：打破空间分辨率和光谱分辨率相互限制的状况，既可保留多光谱图像的光谱信息，也可增强空间分辨率。</p>
+<p>缺点：出现不同程度的光谱损失。</p>
+<h3 id="特征提取"><a href="#特征提取" class="headerlink" title="特征提取"></a>特征提取</h3><p>主要从光谱特征、空间（几何）特征和纹理特征三方面</p>
+<h2 id="图像分类（重点看下）"><a href="#图像分类（重点看下）" class="headerlink" title="图像分类（重点看下）"></a>图像分类（重点看下）</h2><h3 id="分类基本原理"><a href="#分类基本原理" class="headerlink" title="分类基本原理"></a>分类基本原理</h3><p>利用计算机模式识别技术来模拟人类的识别功能，对地球表面及其环境在遥感图像上的信息进行<strong>属性的自动判读和分类</strong>，达到提取所需地物信息的目的。</p>
+<p>模式识别：通过计算机用数字技术方法来研究模式的自动处理和判读。</p>
+<h3 id="遥感图像的分类总目标"><a href="#遥感图像的分类总目标" class="headerlink" title="遥感图像的分类总目标"></a>遥感图像的分类总目标</h3><p>将图像中所有像元自动进行土地覆盖类型或土地覆盖专题的分类。</p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>按照人工干预的程度不同，分为</p>
+<h4 id="监督分类"><a href="#监督分类" class="headerlink" title="监督分类"></a>监督分类</h4><p>首先需要从研究区选择具有代表性的训练场地作为样本，并进行训练，在依据一定的判别函数和判别准则，对待分类像元进行类别判定</p>
+<h4 id="非监督分类"><a href="#非监督分类" class="headerlink" title="非监督分类"></a>非监督分类</h4><p>也称聚类分析，即事先不给定任何先验知识，仅从遥感图像出发，基于波段特征向量进行自然聚类</p>
+<h3 id="训练样本的选取需要注意"><a href="#训练样本的选取需要注意" class="headerlink" title="训练样本的选取需要注意"></a>训练样本的选取需要注意</h3><ol>
+<li>准确性</li>
+<li>代表性</li>
+<li>统计性</li>
+</ol>
+<h3 id="主要的监督分类方法"><a href="#主要的监督分类方法" class="headerlink" title="主要的监督分类方法"></a>主要的监督分类方法</h3><p>最小距离分类法</p>
+<p>平行六面体分类法</p>
+<p>最大似然分类法</p>
+<p>支持向量机</p>
+<p>神经网络分类法</p>
+<h3 id="主要的非监督分类算法"><a href="#主要的非监督分类算法" class="headerlink" title="主要的非监督分类算法"></a>主要的非监督分类算法</h3><p>K-means聚类</p>
+<p>ISODATA</p>
+<h3 id="监督分类和非监督分类的区别"><a href="#监督分类和非监督分类的区别" class="headerlink" title="监督分类和非监督分类的区别"></a>监督分类和非监督分类的区别</h3><p>根本：是否利用训练场地来获取先验的类别知识</p>
+<h4 id="监督分类-1"><a href="#监督分类-1" class="headerlink" title="监督分类"></a>监督分类</h4><p>根据先验知识，选择特征参数，建立判别函数，对待分像元点进行分类。精度更高，应用广泛。需要人工选取训练样本，需要时间较多。</p>
+<h4 id="非监督分类-1"><a href="#非监督分类-1" class="headerlink" title="非监督分类"></a>非监督分类</h4><p>根据地物的光谱统计特征进行分类。方法简单，时间和成本节省。</p>
+<h3 id="定量评价指标"><a href="#定量评价指标" class="headerlink" title="定量评价指标"></a>定量评价指标</h3><p>通过混淆矩阵获得</p>
+<p>混淆矩阵是通过比较分类结果和地面真实情况得到的数值矩阵。</p>
+<h3 id="混淆矩阵"><a href="#混淆矩阵" class="headerlink" title="混淆矩阵"></a>混淆矩阵</h3><p>参考图像附近是用户精度和错分误差</p>
+<p>分类图/被评价图像是生产者精度和漏分精度</p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206222356026.png" srcset="/img/loading.gif" lazyload alt="image-20221206222356026"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206222723677.png" srcset="/img/loading.gif" lazyload alt="image-20221206222723677"></p>
+<h3 id="总体精度计算"><a href="#总体精度计算" class="headerlink" title="总体精度计算"></a>总体精度计算</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206222643012.png" srcset="/img/loading.gif" lazyload alt="image-20221206222643012"></p>
+<h3 id="Kappa系数计算"><a href="#Kappa系数计算" class="headerlink" title="Kappa系数计算"></a>Kappa系数计算</h3><p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206223147211.png" srcset="/img/loading.gif" lazyload alt="image-20221206223147211"></p>
+<p><img src="C:\Users\wjx\AppData\Roaming\Typora\typora-user-images\image-20221206222653593.png" srcset="/img/loading.gif" lazyload alt="image-20221206222653593"></p>
+<h2 id="地面分辨率计算（角度弧度计算）"><a href="#地面分辨率计算（角度弧度计算）" class="headerlink" title="地面分辨率计算（角度弧度计算）"></a>地面分辨率计算（角度弧度计算）</h2><p>1弧度=180/PI</p>
+<p>所以 弧度数*180/PI=角度数</p>
+<p>L=R*α</p>
+<h2 id="注意如果大题让解释微波遥感"><a href="#注意如果大题让解释微波遥感" class="headerlink" title="注意如果大题让解释微波遥感"></a>注意如果大题让解释微波遥感</h2><p>就是微波的波段范围+遥感的定义</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="category-chain-item">基础知识</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E9%81%A5%E6%84%9F/">#遥感</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>遥感基础知识</div>
+      <div>http://example.com/2022/12/08/遥感复习/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>lefttooth</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年12月8日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/12/01/java%E4%BD%9C%E4%B8%9A%E7%8E%8B%E4%BD%B3%E6%97%AD/" title="java作业">
+                        <span class="hidden-mobile">java作业</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
